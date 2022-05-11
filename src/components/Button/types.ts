@@ -4,6 +4,6 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   variant?: 'primary' | 'secondary'
   label: string
   iconOnly?: React.ReactNode | JSX.Element
-  leftIcon?: React.ReactNode | JSX.Element
-  rightIcon?: React.ReactNode | JSX.Element
+  icon?: React.ReactNode | JSX.Element
+  position?: 'left' | 'right'
 }
