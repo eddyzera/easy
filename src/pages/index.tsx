@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 import { Hello } from '../components'
 
 const Home: NextPage = () => {
-  return <Hello />
+  return <Hello label='Hello World' />
 }
 
 export default Home
