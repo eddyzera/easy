@@ -7,7 +7,6 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
   className,
   label,
   variant = 'primary',
-  iconOnly,
   icon,
   position = 'left',
   ...props

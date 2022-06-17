@@ -1,0 +1,38 @@
+@import '../../styles/utils/variables';
+
+.homeContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  align-items: center;
+
+  &_content {
+    span {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $gray-500;
+    }
+
+    h1 {
+      font-size: 6rem;
+      color: $olive-500;
+    }
+
+    p {
+      font-size: 2rem;
+      color: $gray-500;
+    }
+  }
+
+  img {
+    margin-left: auto;
+  }
+
+  button {
+    margin: 20px 0;
+  }
+}
