@@ -1,0 +1,53 @@
+@import '../../../styles/utils/variables';
+
+.modalOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+
+  .modalHeader {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+
+    .modalClose {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      cursor: pointer;
+
+      &:active {
+        border-radius: 50%;
+        border: 1px solid $gray-100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .modal {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 340px;
+    background: $gray-800;
+    padding: 2.4rem;
+    z-index: 1;
+  }
+}
